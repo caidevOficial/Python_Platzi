@@ -12,9 +12,9 @@ def upgradeFunction():
 ```
 
 ## Technologies used. 📌
-|Front-End||Back-End||
+|<a href="https://www.python.org/downloads/"><img align="center" alt="Pyhton" src="https://github.com/caidevOficial/Logos/blob/master/Lenguajes/py_logo1_1.png" width="50px" height="50px" />|<h3>Python</h3>|
 |--------|----------|
-|<a href="https://www.python.org/downloads/"><img align="center" alt="Pyhton" src="https://github.com/caidevOficial/Logos/blob/master/Lenguajes/py_logo1_1.png" width="50px" height="50px" />|<h3>Python</h3>|<!-- Python -->
+
     
 ## License 📄
 This project is under license [GNU GENERAL PUBLIC LICENSE v3.0] - read the file [LICENSE.md](LICENSE) for details.
