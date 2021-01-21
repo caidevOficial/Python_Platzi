@@ -1,4 +1,4 @@
-# Copyright (C) 2020 FacuFalcone - CaidevOficial.
+# Copyright (C) 2021 <FacuFalcone - CaidevOficial>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,15 +15,17 @@
 
 import math
 
+from Polynomial import Polynomial
+from Points import Points
 
-def headerMessage(colorCode, colorPy, colorThon):
+def headerMessage(colorCode: str, colorPy: str, colorThon: str):
     """
     Prints in console the header of the Mini App
     """
-    print(colorCode + "####   Quadratic App  ####")
-    print(colorCode + "#### " + colorPy + "     PYT" +
+    print(colorCode + " ####   Quadratic App  ####")
+    print(colorCode + " #### " + colorPy + "     PYT" +
           colorThon + "HON     " + colorCode + " ####")
-    print(colorCode + "#### By CaidevOficial ####")
+    print(colorCode + " #### By CaidevOficial ####")
 
 
 def inputNumber(colorCode, string):
@@ -39,7 +41,7 @@ def inputNumber(colorCode, string):
 
 
 def validateFirstTerm(colorWarning, termA):
-    if(termA is 0):
+    if(termA == 0):
         print(colorWarning + "If the quadratic term is 0, then the polynomial loses its degree 2 \nand will become a linear formula, it does not make sense \nto keep asking you for numbers.")
         return True
     return False
@@ -73,27 +75,30 @@ def calculateYVertice(termA, termB, termC, xVertice):
     return vertice
 
 
-def finalMessage(colorCode, x1, x2, xVertice, yVertice):
+def finalMessage(colorCode, poly: Polynomial):
     """
     Prints in console the results of all equations.
     """
     print(colorCode+"\n### Roots ###")
-    print(colorCode+"X1: ", x1)
-    print(colorCode+"X2: ", x2)
+    print(colorCode+"X1: ", poly.axis().xAxis())
+    print(colorCode+"X2: ", poly.axis().yAxis())
     print(colorCode+"### Vertices ###")
-    print(colorCode+"Vertice X: ", xVertice)
-    print(colorCode+"Vertice Y: ", yVertice)
+    print(colorCode+"Vertice X: ", poly.vertice().xAxis())
+    print(colorCode+"Vertice Y: ", poly.vertice().yAxis())
 
 def QuadraticApp():
     """
     Computes the values of both roots, vertices and prints them to the console.
     """
-    colorError = "\033[1;31;40m"    # Red.
-    colorWarning = "\033[1;33;40m"  # Yellow.
-    colorResult = "\033[1;32;40m"   # Green.
-    colorApp = "\033[1;32;40m"      # Green.
-    colorPy = "\033[1;34;40m"       # Blue
-    colorThon = "\033[1;33;40m"     # Yellow
+    xAxis: Points
+    yAxis: Points
+    polyn: Polynomial
+    colorError = chr(27)+"[1;31;40m"    # Red.
+    colorWarning = chr(27)+"[1;33;40m"  # Yellow.
+    colorResult = chr(27)+"[1;32;40m"   # Green.
+    colorApp = chr(27)+"[1;32;40m"      # Green.
+    colorPy = chr(27)+"[1;34;40m"       # Blue
+    colorThon = chr(27)+"[1;33;40m"     # Yellow
     headerMessage(colorApp, colorPy, colorThon)
     termA = inputNumber("\033[1;34;40m", "Ax²")     # Blue.
     if(not validateFirstTerm(colorWarning, termA)):
@@ -116,8 +121,11 @@ def QuadraticApp():
                     xVertice = round(calculateXVertice(termA, termB), 2)
                     yVertice = round(calculateYVertice(
                         termA, termB, termC, xVertice), 2)
-
-                    finalMessage(colorResult, x1, x2, xVertice, yVertice)
+                    xAxis(x1,x2)
+                    yAxis(xVertice,yVertice)
+                    polyn(determinant,xAxis,yAxis)
+                    finalMessage(colorResult, polyn)
 
 # Test
-QuadraticApp()
+if __name__ == '__main__':
+    QuadraticApp()
