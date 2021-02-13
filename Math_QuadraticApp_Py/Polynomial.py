@@ -20,19 +20,57 @@ class Polynomial:
     #axis: Points
     #vertices: Points
 
-    def __init__(self, determinant, axis, vertices):
+    def __init__(self, determinant, axis:Points, vertices:Points):
+        """
+        Builds the polynomial.
+        """
         self._determinant = determinant
         self._axis = axis
         self._vertices = vertices
     
-    @determinant.getter
+# Getters
+    @property
     def determinant(self):
+        """
+        Gets the determinant of the polynomial.
+        """
         return self._determinant
 
-    @axis.getter
+    @property
     def axis(self):
+        """
+        Gets the axis of the polynomial.
+        """
         return self._axis
 
-    @vertices.getter
+    @property
     def vertices(self):
+        """
+        Gets the vertices of the polynomial.
+        """
         return self._vertices
+
+# Setters
+
+    @determinant.setter
+    def determinant(self, determinant):
+        """
+        Sets the determinant of the polynomial.
+        """
+        self._determinant = determinant
+
+    @vertices.setter
+    def vertice(self, xVertice, yVertice):
+        """
+        Sets the vertices of the polynomial.
+        """
+        self._vertices.xAxis = xVertice
+        self._vertices.yAxis = yVertice
+
+    @axis.setter
+    def axis(self, xAxis, yAxis):
+        """
+        Sets the axis of the polynomial.
+        """
+        self._axis.xAxis = xAxis
+        self._axis.yAxis = yAxis

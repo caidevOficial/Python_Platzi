@@ -4,9 +4,11 @@ class CasillaDeVotacion:
         self._identificador = identificador
         self._pais = pais
         self._region = None
+    
     @property
     def region(self):
         return self._region
+    
     @region.setter
     def region(self, region):
         if region in self._pais:

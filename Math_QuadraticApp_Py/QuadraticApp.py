@@ -18,6 +18,7 @@ import math
 from Polynomial import Polynomial
 from Points import Points
 
+
 def headerMessage(colorCode: str, colorPy: str, colorThon: str):
     """
     Prints in console the header of the Mini App
@@ -32,7 +33,7 @@ def inputNumber(colorCode, string):
     """
     Request a number from the user.
     """
-    number = input(colorCode + "Write the " + string + " term: ")
+    number = input("\033[;36m" + "Write the " + string + " term: ")
     try:
         number = int(number)
     except:
@@ -86,20 +87,29 @@ def finalMessage(colorCode, poly: Polynomial):
     print(colorCode+"Vertice X: ", poly.vertice().xAxis())
     print(colorCode+"Vertice Y: ", poly.vertice().yAxis())
 
+
 def QuadraticApp():
     """
     Computes the values of both roots, vertices and prints them to the console.
     """
-    xAxis: Points
-    yAxis: Points
-    polyn: Polynomial
-    colorError = chr(27)+"[1;31;40m"    # Red.
-    colorWarning = chr(27)+"[1;33;40m"  # Yellow.
-    colorResult = chr(27)+"[1;32;40m"   # Green.
-    colorApp = chr(27)+"[1;32;40m"      # Green.
-    colorPy = chr(27)+"[1;34;40m"       # Blue
-    colorThon = chr(27)+"[1;33;40m"     # Yellow
+    # Polynomial 
+    x_Axis = Points(0,0)
+    y_Axis = Points(0,0)
+    polyn = Polynomial(0,None,None)
+
+    # Colors
+    code = "\033"
+    colorError = code +"[1;31;40m"    # Red.
+    colorWarning = code+"[1;33;40m"  # Yellow.
+    colorResult = code+"[1;32;40m"   # Green.
+    colorApp = code+colorResult              # Green.
+    colorPy = code+"[1;34;40m"       # Blue
+    colorThon = colorWarning            # Yellow
+    
+    # Message
     headerMessage(colorApp, colorPy, colorThon)
+    
+    # Inputs
     termA = inputNumber("\033[1;34;40m", "Ax²")     # Blue.
     if(not validateFirstTerm(colorWarning, termA)):
         termB = inputNumber("\033[1;35;40m", "Bx")  # Violet.
@@ -109,7 +119,8 @@ def QuadraticApp():
             print(colorError + "Something was wrong with at least one of the terms, try write the numbers again, please.")
         else:
             if(termA == 0):
-                print("")
+                print(
+                    "If the term A is 0, you will lose the quadratic term, leaving you with a linear equation.")
             else:
                 determinant = calculateDeterminant(termA, termB, termC)
                 if(determinant == -1):
@@ -118,13 +129,19 @@ def QuadraticApp():
                 else:
                     x1 = round(((-termB + determinant)/(2*termA)), 2)
                     x2 = round(((-termB - determinant)/(2*termA)), 2)
+
                     xVertice = round(calculateXVertice(termA, termB), 2)
                     yVertice = round(calculateYVertice(
                         termA, termB, termC, xVertice), 2)
-                    xAxis(x1,x2)
-                    yAxis(xVertice,yVertice)
-                    polyn(determinant,xAxis,yAxis)
+
+                    x_Axis.xAxis(x1)
+                    x_Axis.yAxis(x2)
+
+                    y_Axis.setter(xVertice, yVertice)
+                    
+                    polyn(determinant, x_Axis, y_Axis)
                     finalMessage(colorResult, polyn)
+
 
 # Test
 if __name__ == '__main__':

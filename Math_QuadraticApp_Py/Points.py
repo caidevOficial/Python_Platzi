@@ -18,14 +18,39 @@ class Points:
     #xAxis: float
     #yAxis: float
 
-    def __init__(self, xAxis, yAxis):
+    def __init__(self, xAxis:float, yAxis:float):
+        """
+        Builds the entity.
+        """
         self._xAxis = xAxis
         self._yAxis = yAxis
 
+# Getters
     @property
     def xAxis(self):
+        """
+        Gets the x axis of the entity.
+        """
         return self._xAxis
     
     @property
     def yAxis(self):
+        """
+        Gets the y axis of the entity.
+        """
         return self._yAxis
+
+# Setters
+    @xAxis.setter
+    def xAxis(self, xAxis:float):
+        """
+        Sets the x axis of the entity.
+        """
+        self._xAxis = xAxis
+    
+    @yAxis.setter
+    def yAxis(self, yAxis:float):
+        """
+        Sets the y axis of the entity.
+        """
+        self._yAxis = yAxis
