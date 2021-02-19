@@ -13,18 +13,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-def simpleLambda(s,h,e,l,L,c,o,d,E):
+def simpleLambda(s, h, e, l, L, c, o, d, E):
     """
     Prints a message by decoding a hexa into a char.
     """
     msg = ''
     for li in map(lambda x: [
-    chr(y) for y in x], [s,h,e,l,L,c,o,d,E]):
+            chr(y) for y in x], [s, h, e, l, L, c, o, d, E]):
         for ch in li:
             msg += ch
     print(msg)
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     s = [0x4d, 0x53, 0x41, 0x20, 0x3c]
     h = [0x33, 0x20, 0x50, 0x79, 0x74]
     e = [0x68, 0x6f, 0x6e, 0x20, 0x2d]
@@ -35,4 +36,4 @@ if __name__=='__main__':
     d = [0x6f, 0x69, 0x6e, 0x20, 0x75]
     E = [0x73, 0x20, 0x21, 0x21, 0x21]
 
-    simpleLambda(s,h,e,l,L,c,o,d,E)
+    simpleLambda(s, h, e, l, L, c, o, d, E)
