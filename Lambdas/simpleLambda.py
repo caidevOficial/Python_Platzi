@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-def simpleLambda(s, h, e, l, L, c, o, d, E):
+def simpleLambda(s:list, h:list, e:list, l:list, L:list, c:list, o:list, d:list, E:list):
     """
     Prints a message by decoding a hexa into a char.
     """
