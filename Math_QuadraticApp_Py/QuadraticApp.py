@@ -15,8 +15,8 @@
 
 import math
 
-from Polynomial import Polynomial
-from Points import Points
+from Math_QuadraticApp_Py.Polynomial.Polynomial import Polynomial as PM
+from Math_QuadraticApp_Py.Points.Points import Points as P
 
 
 def headerMessage(colorCode: str, colorPy: str, colorThon: str):
@@ -76,7 +76,7 @@ def calculateYVertice(termA, termB, termC, xVertice):
     return vertice
 
 
-def finalMessage(colorCode, poly: Polynomial):
+def finalMessage(colorCode, poly: PM):
     """
     Prints in console the results of all equations.
     """
@@ -93,9 +93,9 @@ def QuadraticApp():
     Computes the values of both roots, vertices and prints them to the console.
     """
     # Polynomial 
-    x_Axis = Points(0,0)
-    y_Axis = Points(0,0)
-    polyn = Polynomial(0,None,None)
+    x_Axis = P(0,0)
+    y_Axis = P(0,0)
+    polyn = PM(0,None,None)
 
     # Colors
     code = "\033"
