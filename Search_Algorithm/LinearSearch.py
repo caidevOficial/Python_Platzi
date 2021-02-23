@@ -44,7 +44,7 @@ def linear_Search():
     print("# List generated #")
     print(myList)
     print(f'The element {objetive} {"is" if found else "is not"} in the list!')
-    print(f'Iterations quantity of binary search: {iter_lin}')
+    print(f'Iterations quantity of Linear search: {iter_lin}')
 
 
 if __name__ == "__main__":
