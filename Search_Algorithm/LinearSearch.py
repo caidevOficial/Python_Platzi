@@ -15,19 +15,21 @@
 
 import random as rd
 
-def linearSearch(myList, objetive,iter_lin=0):
+
+def linearSearch(myList, objetive, iter_lin=0):
     """
     Searches in the list, the objetive number in a iteratively way.
     """
     match = False
 
     for element in myList:
-        iter_lin+=1
+        iter_lin += 1
         if element == objetive:
             match = True
             break
 
-    return (match,iter_lin)
+    return (match, iter_lin)
+
 
 def linear_Search():
     # ----- Config ----- #
@@ -36,7 +38,7 @@ def linear_Search():
 
     # ----- Creates the list ----- #
     myList = sorted([rd.randint(0, 1500) for i in range(listSize)])
-    (found,iter_lin) = linearSearch(myList, objetive)
+    (found, iter_lin) = linearSearch(myList, objetive)
 
     # ----- Message area ----- #
     print("# List generated #")
