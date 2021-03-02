@@ -15,7 +15,7 @@
 
 from bokeh.plotting import figure as fg, output_file as of, show as sh
 
-if __name__ == "__main__":
+def simpleGraphic():
     of('simple_graphic.html')
     fig = fg()
 
@@ -29,3 +29,6 @@ if __name__ == "__main__":
     
     fig.line(x_vals, y_vals, line_width=2)
     sh(fig)
+
+if __name__ == "__main__":
+    simpleGraphic()
