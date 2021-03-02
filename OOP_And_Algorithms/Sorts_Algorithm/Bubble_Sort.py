@@ -15,22 +15,24 @@
 
 import random as rd
 
-def bubbleSort(myList:list):
+
+def bubbleSort(myList: list):
     """
     Sorts the list in Ascendant mode and returns it properly sorted.
     """
     listLen = len(myList)
 
     for i in range(listLen):
-        for j in range(0, listLen-i-1): # O(n) * O(n) = O(n*n) = O(n**2)
-            if (myList[j]>myList[j+1]):
+        for j in range(0, listLen-i-1):  # O(n) * O(n) = O(n*n) = O(n**2)
+            if (myList[j] > myList[j+1]):
                 myList[j], myList[j+1] = myList[j+1], myList[j]
-    return myList        
+    return myList
+
 
 if __name__ == "__main__":
     listSize = int(input("Tell me the size of the list: "))
 
-    numbers = [rd.randint(0,100) for i in range(listSize)]
+    numbers = [rd.randint(0, 100) for i in range(listSize)]
     print("List before the sort:")
     print(numbers)
     print("\nList After being sorted:")
