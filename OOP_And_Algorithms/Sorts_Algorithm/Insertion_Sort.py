@@ -17,13 +17,16 @@ import random as rd
 
 
 def insertionSort(myList: list):
+    """
+    Sorts the list by inserting the numbers in a specific index.
+    """
 
     for index in range(1, len(myList)):
         actualValue = myList[index]
         actualPosition = index
 
         while actualPosition > 0 and myList[actualPosition - 1] > actualValue:
-            myList[actualPosition] = myList[actualPosition - 1]
+            myList.insert(actualPosition, myList.pop(actualPosition-1))
             actualPosition -= 1
 
         myList[actualPosition] = actualValue
@@ -33,7 +36,7 @@ def insertionSort(myList: list):
 if __name__ == "__main__":
     listSize = int(input("Tell me the size of the list: "))
     numbers = [rd.randint(0, 100) for i in range(listSize)]
-    
+
     print("List before the sort:")
     print(numbers)
     print("\nList After being sorted:")
