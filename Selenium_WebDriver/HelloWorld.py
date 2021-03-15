@@ -23,18 +23,23 @@ from selenium import webdriver
 class HelloWorld(unittest.TestCase):
     #currentDir = os.path.dirname(os.path.realpath(__file__))
 
-    def setUp(self):
+    @classmethod
+    def setUp(cls):
         
-        self.driver = webdriver.Chrome(executable_path=r'chromedriver_win32/chromedriver.exe')
-        driver = self.driver
+        cls.driver = webdriver.Chrome(executable_path=r'chromedriver_win32/chromedriver.exe')
+        driver = cls.driver
         driver.implicitly_wait(10)
 
     def test_hello_world(self):
         driver = self.driver
         driver.get('https://www.google.com.ar')
 
-    def tearDown(self):
-        self.driver.quit()
+    def visitWikipedia(self):
+        self.driver.get('https://www.wikipedia.org')
+
+    @classmethod # run in only one window
+    def tearDown(cls):
+        cls.driver.quit()
 
 
 if __name__ == '__main__':
