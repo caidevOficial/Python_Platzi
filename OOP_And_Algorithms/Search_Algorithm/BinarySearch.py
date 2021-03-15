@@ -44,7 +44,7 @@ def binarySearch():
     # ----- Creates the list ----- #
     myList = sorted([rd.randint(0, 1500) for i in range(listSize)])
     (found,iter_bin) = binSearch(myList, 0, len(myList), objetive)
-
+    
     # ----- Message area ----- #
     print("# List generated #")
     print(myList)
