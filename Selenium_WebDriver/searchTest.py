@@ -19,28 +19,23 @@ from pyunitreport import HTMLTestRunner
 from selenium import webdriver
 
 
-class HelloWorld(unittest.TestCase):
-    #currentDir = os.path.dirname(os.path.realpath(__file__))
+class HomePageTest(unittest.TestCase):
+    currentDir = os.path.dirname(os.path.realpath(__file__))
 
-    @classmethod
-    def setUp(cls):
-        cls.driver = webdriver.Chrome(
-            executable_path=r'chromedriver_win32/chromedriver.exe')
-        driver = cls.driver
-        driver.implicitly_wait(10)
-
-    def test_hello_world(self):
+    def setUp(self):
+        self.driver = webdriver.Chrome(
+            executable_path=r'chromedriver_win32\chromedriver.exe')
         driver = self.driver
-        driver.get('https://www.google.com.ar')
+        driver.get('http://www.demo-store.seleniumacademy.com/')
+        driver.maximize_window()
 
-    def visitWikipedia(self):
-        self.driver.get('https://www.wikipedia.org')
+    def test_search_textField(self):
+        search_field = self.driver.find_element_by_id("search")
 
-    @classmethod  # run in only one window
-    def tearDown(cls):
-        cls.driver.quit()
+    def tearDown(self):
+        self.driver.quit()
 
 
 if __name__ == '__main__':
     unittest.main(verbosity=2, testRunner=HTMLTestRunner(
-        output='reports', report_name='hello-world-reports'))
+        output='reports', report_name='search-reports'))
