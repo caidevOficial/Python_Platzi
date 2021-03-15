@@ -20,11 +20,11 @@ from selenium import webdriver
 
 
 class HomePageTest(unittest.TestCase):
-    currentDir = os.path.dirname(os.path.realpath(__file__))
-
+    currentDir = os.path.dirname(os.path.realpath(__file__)) + "\chromedriver.exe"
+    #rel_path = "C:\Users\Facu\Desktop\GitHub\Python_Platzi\Selenium_WebDriver\chromedriver_win32\chromedriver.exe"
     def setUp(self):
         self.driver = webdriver.Chrome(
-            executable_path=r'chromedriver_win32\chromedriver.exe')
+            executable_path=r'C:\Users\Facu\Desktop\GitHub\Python_Platzi\Selenium_WebDriver\chromedriver_win32\chromedriver.exe')
         driver = self.driver
         driver.get('http://www.demo-store.seleniumacademy.com/')
         driver.maximize_window()
