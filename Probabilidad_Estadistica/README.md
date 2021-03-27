@@ -11,7 +11,7 @@
 
 ---
 
-# Combinatory Calculus PyApp. 👨‍💻
+# Combinatory Calculus PyApp. 🧮👨‍💻
 ---
 
 <details>
@@ -32,9 +32,9 @@ def ShowNewSkill():
 ```
 ---
 
-# How to use it:
+# How to use it: ⤵️
 
-#### **Run the [Main.py](Main.py)** and choose from the listed options.
+#### ▶️ **Run the [Main.py](Main.py)** and choose from the listed options.
 <table>
     <th>Menu of the App</th>
     <tr>
@@ -44,7 +44,7 @@ def ShowNewSkill():
     </tr>
 </table>
 
-By **selecting option 1**, you will be able to perform the calculation through a _Simple Permutation_ using the formula:
+▶️ By **selecting option 1**, you will be able to perform the calculation through a _Simple Permutation_ using the formula: ⤵️
 <table>
     <th>Simple Permutation's Formula</th>
     <tr>
@@ -54,7 +54,7 @@ By **selecting option 1**, you will be able to perform the calculation through a
     </tr>
 </table>
 
-By **selecting option 2**, you will be able to perform the calculation through a _Simple Variation_ using the formula:
+▶️ By **selecting option 2**, you will be able to perform the calculation through a _Simple Variation_ using the formula: ⤵️
 <table>
     <th>Simple Variation's Formula</th>
     <tr>
@@ -64,7 +64,7 @@ By **selecting option 2**, you will be able to perform the calculation through a
     </tr>
 </table>
 
-By **selecting option 3**, you will be able to perform the calculation through a _Simple Combination_ using the formula:
+▶️ By **selecting option 3**, you will be able to perform the calculation through a _Simple Combination_ using the formula: ⤵️
 <table>
     <th>Simple Combination's Formula</th>
     <tr>
@@ -74,7 +74,7 @@ By **selecting option 3**, you will be able to perform the calculation through a
     </tr>
 </table>
 
-By **selecting option 4**, you will be able to perform the calculation through a _Composed Permutation_ using the formula:
+▶️ By **selecting option 4**, you will be able to perform the calculation through a _Composed Permutation_ using the formula: ⤵️
 <table>
     <th>Composed Permutation's Formula</th>
     <tr>
@@ -84,7 +84,7 @@ By **selecting option 4**, you will be able to perform the calculation through a
     </tr>
 </table>
 
-By **selecting option 5**, you will be able to perform the calculation through a _Composed Variation_ using the formula:
+▶️ By **selecting option 5**, you will be able to perform the calculation through a _Composed Variation_ using the formula: ⤵️
 <table>
     <th>Composed Variation's Formula</th>
     <tr>
@@ -94,7 +94,7 @@ By **selecting option 5**, you will be able to perform the calculation through a
     </tr>
 </table>
 
-By **selecting option 6**, you will be able to perform the calculation through a _Composed Combination_ using the formula:
+▶️ By **selecting option 6**, you will be able to perform the calculation through a _Composed Combination_ using the formula: ⤵️
 <table>
     <th>Composed Combination's Formula</th>
     <tr>
