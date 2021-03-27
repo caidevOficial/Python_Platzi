@@ -20,4 +20,4 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from Permutations import Permutation as P, Factorial as F
+from Permutation import Permutation as P, Factorial as F

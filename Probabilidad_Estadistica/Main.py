@@ -20,9 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from Permutations import Permutation as P
-from Combinatory import Combinatoy as C
-from Variation import Variation as V
+from Permutation import Permutations as P
+from Combination import Combinations as C
+from Variation import Variations as V
 
 
 def SelectOperation(option: int):
