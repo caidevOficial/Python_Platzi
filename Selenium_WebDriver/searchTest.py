@@ -22,15 +22,34 @@ from selenium import webdriver
 class HomePageTest(unittest.TestCase):
     currentDir = os.path.dirname(os.path.realpath(__file__)) + "\chromedriver.exe"
     #rel_path = "C:\Users\Facu\Desktop\GitHub\Python_Platzi\Selenium_WebDriver\chromedriver_win32\chromedriver.exe"
+    
     def setUp(self):
         self.driver = webdriver.Chrome(
             executable_path=r'C:\Users\Facu\Desktop\GitHub\Python_Platzi\Selenium_WebDriver\chromedriver_win32\chromedriver.exe')
         driver = self.driver
-        driver.get('http://www.demo-store.seleniumacademy.com/')
+        driver.get('https://caidevoficial.github.io/Curriculum/')
         driver.maximize_window()
+        #driver.implicitly_wait(20) #Wait until close
 
     def test_search_textField(self):
-        search_field = self.driver.find_element_by_id("search")
+        search_field = self.driver.find_element_by_id("myPhoto")
+
+    # def test_search_text_field_by_name(self):
+    #     search_field = self.driver.find_element_by_name("q")
+    
+    def test_search_test_field_by_class_name(self):
+        search_field = self.driver.find_element_by_class_name("shadow")
+
+    def test_search_button_enabled(self):
+        button = self.driver.find_element_by_class_name("container")
+
+    def test_xPath(self):
+        img_path = self.driver.find_element_by_xpath("/html/body/div/div/div[1]/div[1]/img")
+
+    # def test_count_of_promo_banner_images(self):
+    #     banner_list = self.driver.find_element_by_class_name("promos")
+    #     banners = banner_list.find_element_by_tag_name('img')
+    #     self.assertEqual(3,len(banners))
 
     def tearDown(self):
         self.driver.quit()
