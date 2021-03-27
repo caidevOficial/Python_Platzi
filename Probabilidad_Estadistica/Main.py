@@ -1,17 +1,17 @@
 # MIT License
-# 
+#
 # Copyright (c) 2021 [FacuFalcone]
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -19,44 +19,30 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-#/
+# /
 
 from Permutations import Permutation as P
 from Combinatory import Combinatoy as C
 from Variation import Variation as V
 
-def SelectOperation(option:int):
-    if option == 1:
-        try:
+
+def SelectOperation(option: int):
+    try:
+        if option == 1:
             P.SimplePermutation()
-        except Exception as e:
-            print(e)
-    elif option == 2:
-        try:
+        elif option == 2:
             V.SimpleVariation()
-        except Exception as e:
-            print(e)
-    elif option == 3:
-        try:
+        elif option == 3:
             C.SimpleCombinatory()
-        except Exception as e:
-            print(e)
-    elif option ==4:
-        try:
+        elif option == 4:
             P.ComposedPermutation()
-        except Exception as e:
-            print(e)
-    elif option == 5:
-        try:
+        elif option == 5:
             V.CompoundVariation()
-        except Exception as e:
-            print(e)
-    elif option == 6:
-        try:
+        elif option == 6:
             C.CompoundCombinatory()
-        except Exception as e:
-            print(f"Error: {e}")
-    
+    except Exception as e:
+        print(f"Error: {e}")
+
 
 def CombinatorialCalculus():
     appName = "Combinatorial Calculus"
@@ -74,5 +60,5 @@ def CombinatorialCalculus():
         print(f"\n## {appName} {version} by {author}. ##\n")
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     CombinatorialCalculus()
