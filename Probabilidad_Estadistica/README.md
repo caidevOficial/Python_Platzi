@@ -1,10 +1,10 @@
 <table>
     <tr>
         <td>
-            <img alt="Banner" src="https://github.com/caidevOficial/Curriculum/raw/main/media/pm/pageImgs/banner.gif" height="115px" />
+            <img alt="Banner" src="https://github.com/caidevOficial/Curriculum/raw/main/media/pm/pageImgs/banner.gif" height="145px" />
         </td>
         <td>
-            <img align="center" alt="Python" src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg?raw=true?raw=true" height="115px" />
+            <img align="center" alt="Python" src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg?raw=true?raw=true" height="155px" />
         </td>
     </tr>
 </table></br>
