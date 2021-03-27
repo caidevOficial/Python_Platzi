@@ -1,4 +1,10 @@
-<td><a href="" target="_blank"><img alt="PoloTic Misiones" src="https://github.com/caidevOficial/Logos/blob/master/Instituciones/Platzi.jpg" width="330px" height="112px" /></td></br>
+<table>
+  <tr>
+    <td><a href="" target="_blank"><img alt="PoloTic Misiones" src="https://github.com/caidevOficial/Logos/blob/master/Instituciones/Platzi.jpg" width="330px" height="112px" /></td>
+  <td><img alt="Python" src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg?raw=true" height="112px" /></td>
+  </tr>
+  </table>
+  </br>
 
 # Python - Platzi. 👨‍💻
 
