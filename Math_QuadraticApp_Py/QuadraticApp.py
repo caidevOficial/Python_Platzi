@@ -15,8 +15,8 @@
 
 import math
 
-from Math_QuadraticApp_Py.Polynomial.Polynomial import Polynomial as PM
-from Math_QuadraticApp_Py.Points.Points import Points as P
+from Polynomial_Mod.Polynomial import Polynomial as PM
+from Points_Mod.Points import Points as P
 
 
 def headerMessage(colorCode: str, colorPy: str, colorThon: str):
@@ -35,7 +35,7 @@ def inputNumber(colorCode, string):
     """
     number = input("\033[;36m" + "Write the " + string + " term: ")
     try:
-        number = int(number)
+        number = float(number)
     except:
         return False
     return number
@@ -92,23 +92,23 @@ def QuadraticApp():
     """
     Computes the values of both roots, vertices and prints them to the console.
     """
-    # Polynomial 
-    x_Axis = P(0,0)
-    y_Axis = P(0,0)
-    polyn = PM(0,None,None)
+    # Polynomial
+    x_Axis = P(0, 0)
+    y_Axis = P(0, 0)
+    polyn = PM(0, None, None)
 
     # Colors
     code = "\033"
-    colorError = code +"[1;31;40m"    # Red.
+    colorError = code + "[1;31;40m"    # Red.
     colorWarning = code+"[1;33;40m"  # Yellow.
     colorResult = code+"[1;32;40m"   # Green.
     colorApp = code+colorResult              # Green.
     colorPy = code+"[1;34;40m"       # Blue
     colorThon = colorWarning            # Yellow
-    
+
     # Message
     headerMessage(colorApp, colorPy, colorThon)
-    
+
     # Inputs
     termA = inputNumber("\033[1;34;40m", "Ax²")     # Blue.
     if(not validateFirstTerm(colorWarning, termA)):
@@ -134,13 +134,15 @@ def QuadraticApp():
                     yVertice = round(calculateYVertice(
                         termA, termB, termC, xVertice), 2)
 
-                    x_Axis.xAxis(x1)
-                    x_Axis.yAxis(x2)
+                    x_Axis.set_xAxis(x1)
+                    x_Axis.set_yAxis(x2)
 
                     y_Axis.setter(xVertice, yVertice)
-                    
+
                     polyn(determinant, x_Axis, y_Axis)
                     finalMessage(colorResult, polyn)
+    else:
+        print("Please, restart the App!")
 
 
 # Test
