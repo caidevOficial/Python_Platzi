@@ -1,12 +1,19 @@
 <table>
   <tr>
-    <td><a href="" target="_blank"><img alt="PoloTic Misiones" src="https://github.com/caidevOficial/Logos/blob/master/Instituciones/Platzi.jpg" width="330px" height="112px" /></td>
+    <td><a href="" target="_blank"><img alt="Platzi Logo" src="https://github.com/caidevOficial/Logos/blob/master/Instituciones/Platzi.jpg?raw=true" width="330px" height="112px" /></td>
   <td><img alt="Python" src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg?raw=true" height="112px" /></td>
   </tr>
   </table>
   </br>
 
-# Python - Platzi. 👨‍💻
+
+![](https://hit.yhype.me/github/profile?user_id=12877139)
+
+<p align="center">
+    <img src="https://komarev.com/ghpvc/?username=caidevoficial&label=Profile%20views&color=0e75b6&style=plastic" alt="caidevoficial" />
+</p>
+
+<h1 align='center'>Python - Platzi. 👨‍💻</h1>
 
 <div align="center">
   <h1>Curso de POO y Algoritmos con Python</h1>
