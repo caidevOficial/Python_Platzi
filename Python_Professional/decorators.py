@@ -29,12 +29,12 @@ def my_decorator_1(func):
     Returns:\n
         [function]: [Function to be returned decorated.]
     """
-    def wrapper():
+    def wrapper(*args, **kwargs):
         """[summary]\n
         A wrapper function
         """
         print('Before_1')
-        func()
+        func(*args, **kwargs)
         print('After_1')
     return wrapper
 
@@ -65,6 +65,21 @@ def my_decorator_2(func):
         return result
     return wrapper
 
+def upper_case_dec(func):
+    def wrapper(text: str):
+        """[summary]\n
+        A wrapper function
+        
+        Args:\n
+            text (str): [The text to be converted to upper case]
+            
+        Returns:\n
+            [type]: [description]
+        """
+        assert isinstance(text, str), 'The text must be a string'
+        return func(text.upper())
+    return wrapper
+
 def simple_function():
     """[summary]\n
     A simple function that prints a basic msg.
@@ -78,6 +93,16 @@ def another_simple_function():
     """
     print('I am another simple function')
 
+@upper_case_dec
+def messenger(text: str):
+    """[summary]\n
+    A simple function that prints a basic msg but decorated with my_decorator_1
+    
+    Args:\n
+        text (str): [The text to be converted to upper case]
+    """
+    print(f'I am a messenger function and my text is: {text}')
+
 if __name__ == '__main__':
     print('\nFirst decorator:')
     simple_function_1 = my_decorator_1(simple_function)
@@ -89,3 +114,6 @@ if __name__ == '__main__':
 
     print('\nThird decorator with sugar syntax:')
     another_simple_function()
+
+    print('\nFourth decorator with sugar syntax:')
+    messenger('Hello World!')
