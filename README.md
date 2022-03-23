@@ -17,33 +17,29 @@
     <img src="https://komarev.com/ghpvc/?username=caidevoficial&label=Profile%20views&color=0e75b6&style=plastic" alt="caidevoficial" />
 </p>
 
-<h1 align='center'>Python - Platzi. 👨‍💻</h1>
-
-<div align="center">
-  <h1>Python Complete Course</h1>
-</div>
+<h1 align='center'>Python Complete Course - Platzi. 👨‍💻</h1>
 
 <div align="center"> 
-  <img src="./readme_img/python.png" width="250">
+    <img src="./readme_img/python.png" width="250">
 </div>
 
-Curso de Python impartido por Facundo García Martoni y [David Aroesti](https://github.com/jdaroesti) en [Platzi](https://platzi.com/r/karlbehrens/) . 
+Python course taught by Facundo Garc&iacute;a Martoni & [David Aroesti](https://github.com/jdaroesti) en [Platzi](https://platzi.com/r/karlbehrens/) . 
 
-El curso de Facundo García Martoni Se divide en 3 partes:
+Facundo Garc&iacute;a Martoni's course is divided into 3 parts:
 
 ---
-### 1 - Redirecci&oacute;n a secci&oacute;n Instructor: [David Aroesti](./OOP_And_Algorithms/).
+### 1 - Redirection to Instructor section: [David Aroesti](./OOP_And_Algorithms/).
 
 
 ### 2 - Instructor: Facundo Garc&iacute;a Martoni.
 <ol>
     <li>
         <h3>
-            <a href="./Python_Basic/">Python B&aacute;sico
+            <a href="./Python_Basic/">Basic Python Course  
             </a>
         </h3>
     </li>
-  <p>Temas de la primera parte:</p>
+  <p>First Part Topics:</p>
     <ul type="disc">
         <li>
             <a href="./Python_Basic/Basic_Concepts">Basic Concepts of Python
@@ -64,11 +60,11 @@ El curso de Facundo García Martoni Se divide en 3 partes:
     </ul>
     <li>
         <h3>
-            <a href="./Python_Intermediate/">Curso de Python Intermedio
+            <a href="./Python_Intermediate/">Intermediate Python Course
             </a>
         </h3>
     </li>
-    <p>Temas de la segunda parte:</p>
+    <p>Second Part Topics:</p>
     <ul type="disc">
         <li>
             <a href="./Python_Intermediate/Comprehensions/">Dict & List Comprehensions
@@ -93,11 +89,11 @@ El curso de Facundo García Martoni Se divide en 3 partes:
     </ul>
     <li>
         <h3>
-            <a href="./Python_Professional/">Curso de Python Avanzado
+            <a href="./Python_Professional/">Professional Python Course
             </a>
         </h3>
     </li>
-    <p>Temas de la tercera parte:</p>
+    <p>Third Part Topics:</p>
     <ul type="disc">
         <li>
             <a href="./Python_Professional/Basic/">Static Typing
