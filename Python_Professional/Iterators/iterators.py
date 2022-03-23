@@ -20,41 +20,20 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from datetime import datetime as dt
+import random as rd
 
-
-def execution_time(func):
-    """[summary]\n
-    Decorator to calculate the execution time of a function.
-    Args:
-        func (function): Function to be decorated
-    
-    Returns:\n
-        [function]: [Function to be returned decorated.]
+def basic_iterator(my_list: list) -> None:
     """
-    def wrapper(*args, **kwargs):
-        """[summary]\n
-        A wrapper function to calculate the execution time of a function.
-
-        Args:\n
-            *args ([type]): [First argument]\n
-            **kwargs ([type]): [Keys Arguments]
-        """
-        start = dt.now()
-        func(*args, **kwargs)
-        end = dt.now()
-        total_time = round((end - start).total_seconds(), 2)
-        print(f"{func.__name__} took {total_time} seconds to execute")
-    return wrapper
-
-@execution_time
-def just_for_check():
-    """[summary]\n
-    A function just for check the execution time of a function.
+    Basic iterator
     """
-    for _ in range(10000000*25):
-        pass
+    iter_list = iter(my_list)
+    while True:
+        try:
+            elm = next(iter_list)
+            print(elm)
+        except StopIteration:
+            break
 
-if __name__ == '__main__':
-    print(just_for_check())
-    
+if __name__ == "__main__":
+    my_list = [rd.randint(0, 100) for x in range(100)]
+    basic_iterator(my_list)

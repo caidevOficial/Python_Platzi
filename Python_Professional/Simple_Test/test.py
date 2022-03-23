@@ -3,9 +3,8 @@
 
 import unittest
 from unittest import TestCase
-from palindrome import is_palindrome
-from is_prime import is_prime
-
+from Basic.palindrome import is_palindrome
+from Basic.is_prime import is_prime
 
 class TestingFunctions(TestCase):
     """Tests to know if the methods works well"""

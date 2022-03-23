@@ -1,4 +1,4 @@
-<table>
+<table align='center'>
   <tr>
     <td><a href="" target="_blank"><img alt="Platzi Logo" src="https://github.com/caidevOficial/Logos/blob/master/Instituciones/Platzi.jpg?raw=true" width="330px" height="112px" /></td>
   <td><img alt="Python" src="https://github.com/devicons/devicon/raw/master/icons/python/python-original.svg?raw=true" height="112px" /></td>
@@ -1007,18 +1007,121 @@ if __name__ == '__main__':
     print(resultado)
 ```
 
-## Technologies used. 📌
-|<a href="https://www.python.org/downloads/"><img align="center" alt="Pyhton" src="https://github.com/caidevOficial/Logos/blob/master/Lenguajes/py_logo1_1.png?raw=true" width="50px" height="50px" />|<h3>Python</h3>|
-|--------|----------|
+---
 
-    
-## License 📄
-This project is under license [GNU GENERAL PUBLIC LICENSE v3.0] - read the file [LICENSE.md](LICENSE) for details.
+<br><br><br>
+<table align='center'>
+    <tr align='center'>
+        <h2 align='center'>Technologies used. 📌</h2>
+        <td>
+            <a href="https://www.python.org/downloads/"><img alt="Pyhton Logo" src="https://github.com/caidevOficial/Logos/blob/master/Lenguajes/py_logo1_1.png?raw=true" width="50px" height="50px" /></a>
+        </td>
+        <td><center>Python</center></td>
+    </tr>
+    <tr align='center'>
+        <td>
+            <a href="https://code.visualstudio.com/"><img alt="VSCode Logo" src="https://github.com/caidevOficial/Logos/blob/master/Lenguajes/visual-studio-code.svg?raw=true" height="50px" /></a>
+        </td>
+        <td><center>VSCode</center></td>
+    </tr>
+</table>
+<br><br><br>
 
-## Where to find me: 🌎
-|<img class="circular" alt="Facu" src="https://avatars1.githubusercontent.com/u/12877139?s=400&u=d369ee24466653d9bbeeb9654930e3ff1c67b76a&v=4" width="80px" height="80px" />||
-|------------|------------|
-|🤴 Facu Falcone|Junior Developer|
-|<img alt="GitHub" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" width="95px" height="30px" />|<center><a href="https://github.com/caidevOficial/">Github</a></center>|
-|<img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" width="95px" height="30px" />|<a href="https://www.linkedin.com/in/facundo-falcone/">LinkedIn</a>|
-|<img alt='Invitame un café en cafecito.app' srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' width="95px" height="30px" />|<a href="https://cafecito.app/caidevoficial/">CafecitoApp</a>|
+---
+
+<br><br><br>
+<table>
+    <theader>
+        <tr>
+            <th colspan=2>
+                <center><strong>LICENSE</strong></center>
+            </th>
+        </tr>
+        <tr>
+            <th colspan=2>
+                <center>Git Repository Cloner 2022</center>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <center>License</center>
+            </th>
+            <th>
+                <center>Author</center>
+            </th>
+        </tr>
+    </theader>
+    <tbody>
+        <tr>
+            <td>
+                <center>[GNU General Public License V3]</center>
+            </td>
+            <td>
+                <center>[Facundo Falcone - CaidevOficial]</center>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <center>
+                    This program is free software: you can redistribute it and/or modify
+                    it under the terms of the GNU General Public License as published by
+                    the Free Software Foundation, either version 3 of the License, or
+                    (at your option) any later version.
+                    This program is distributed in the hope that it will be useful,
+                    but WITHOUT ANY WARRANTY; without even the implied warranty of
+                    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+                    GNU General Public License for more details.
+                    You should have received a copy of the GNU General Public License
+                    along with this program.
+                    If not, see <a href='https://www.gnu.org/licenses/'>GNU Licenses</a>.
+                </center>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br>
+
+---
+
+<br><br><br>
+<table align='center'>
+  <theader>
+  <th><h2 align='center'>Where to find me: 🌎</h2></th>
+    <tr align='center'>
+      <td>
+        <img class="circular" alt="Facu" src="https://avatars1.githubusercontent.com/u/12877139?s=400&u=d369ee24466653d9bbeeb9654930e3ff1c67b76a&v=4" width="80px" height="80px" />
+      </td>
+    </tr>
+    <th><center>🤴 Facu Falcone - Python & GCP Developer</center></th>
+    </theader>
+    <tbody>
+    <tr align='center'>
+      <td>
+        <a href="https://github.com/caidevOficial/">
+          <img alt="GitHub" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" width="125px" height="30px" />
+        </a>
+      </td>
+    </tr>
+    <tr align='center'>
+      <td>
+          <a href="https://www.linkedin.com/in/facundo-falcone/">
+            <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" width="125px" height="30px" />
+          </a>
+      </td>
+    </tr>
+    <tr align='center'>
+      <td>
+        <a href="https://cafecito.app/caidevoficial/">
+          <img alt='Invitame un café en cafecito.app' srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' width="125px" height="30px" />
+        </a>
+      </td>
+    </tr>
+    <tr align='center'>
+      <td>
+        <a href='https://ko-fi.com/P5P74JBOH' target='_blank'>
+          <img width="125px" height="30px" style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
