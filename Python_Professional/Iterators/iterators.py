@@ -21,9 +21,7 @@
 # SOFTWARE.
 
 import random as rd
-from Decorators.decorators_utils import execution_time as et
 
-@et
 def basic_iterator(my_list: list) -> None:
     """
     Basic iterator
