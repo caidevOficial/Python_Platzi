@@ -23,7 +23,7 @@
     <img src="./readme_img/python.png" width="250">
 </div>
 
-Python course taught by Facundo Garc&iacute;a Martoni & [David Aroesti](https://github.com/jdaroesti) en [Platzi](https://platzi.com/r/karlbehrens/) . 
+Python course taught by Facundo Garc&iacute;a Martoni & [David Aroesti](https://github.com/jdaroesti) in [Platzi](https://platzi.com/r/karlbehrens/) . 
 
 Facundo Garc&iacute;a Martoni's course is divided into 3 parts:
 
